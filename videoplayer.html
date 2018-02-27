@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="videoplayer.css">
+    <title>Document</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    
+    <div class="video-player">
+        
+        <video id="video1">
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+            </video>
+            <!-- <div class="buttons">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
+            </div> -->
+
+            <div class="controls">
+                <button id='btnPlayPause' class='button' title='play' onclick='playPauseVideo();'></button>
+                <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                <button id='btnReplay' class='button' title='replay' onclick='replayVideo();'></button>  
+                <button id='btnStop' class='button' title='stop' onclick='stopVideo();'></button>
+                <div class="volume">
+                    <button id='btnMute' class='button' title='mute'></button>
+                    <input id="seek" class="slider" type="range" value="0.5" max="1" step="0.1">
+                </div>
+            </div>
+      </div>
+
+      <div class="clearfloat"></div>
+
+      
+
+    <script src="videoplayer.js">
+        var imageUrl = "media/pause.png";
+        $('#btnStop').css('background-image', 'url(' + imageUrl + ')');
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>

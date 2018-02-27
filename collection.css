@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+button, input {
+    outline: none;
+}
+
+body {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url(back1.jpg);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header h1 {
+    font-family: 'Itim', cursive;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+nav {
+    background: rgba(0, 0, 0, 100);
+    border-radius: 0 0 5px 5px;
+    margin: 1px 0px;
+    padding: 0px;
+    z-index: 2;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.list {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+}
+
+nav ul li:first-child {
+    background: rgb(255, 255, 255);
+    color: black;
+    margin: 0px;
+}
+
+nav ul li input {
+    padding: 0px;
+    margin-left: 160%;
+    padding: 8px;
+}
+
+nav ul li button {
+    background: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border: 1px white solid;
+    padding: 8px;
+    margin: 0px 0px;
+    margin-left: 400%;
+}
+
+.slide-show {
+    height: 300px;
+    background-size: 100% 100%;
+    animation-name: images;
+    animation-duration: 65s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes images {
+     0%{background-image: url(slides/1.jpg);}
+     5%{background-image: url(slides/2.jpg);}
+     10%{background-image: url(slides/3.jpg);}
+     15%{background-image: url(slides/4.jpg);}
+     20%{background-image: url(slides/5.jpg);}
+     25%{background-image: url(slides/6.jpg);}
+     30%{background-image: url(slides/7.jpg);}
+     35%{background-image: url(slides/8.jpg);}
+     40%{background-image: url(slides/9.jpg);}
+     45%{background-image: url(slides/10.jpg);}
+     50%{background-image: url(slides/11.jpg);}
+     55%{background-image: url(slides/12.jpg);}
+     60%{background-image: url(slides/13.jpg);}
+     65%{background-image: url(slides/14.jpg);}
+     70%{background-image: url(slides/15.jpg);}
+     75%{background-image: url(slides/16.jpg);}
+     80%{background-image: url(slides/17.jpg);}
+     85%{background-image: url(slides/18.jpg);}
+     90%{background-image: url(slides/19.jpg);}
+     95%{background-image: url(slides/20.jpg);}
+     100%{background-image: url(slides/21.jpg);}
+}
+
+#la {
+    position: relative;
+    top: 35%;
+    float: left;
+    height: 150px;
+    width: 150px;
+    opacity: 0.4;
+    transform: opacity;
+}
+
+#la:hover {
+    opacity: 1;
+}
+
+#ra {
+    position: relative;
+    top: 35%;
+    float: right;
+    height: 150px;
+    width: 150px;
+    opacity: 0.4;
+}
+
+#ra:hover {
+    opacity: 1;
+}
+
+.side-bar {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+hr {
+    margin: 10px 0px;
+}
+
+.anime {
+    height: 400px;
+    width: 24%;
+    display: inline-block;
+    border: 1px rgb(0, 0, 0) solid;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.anime img {
+    margin: 0px;
+    height: 400px;
+    width: 100%;
+}
+
+.anime a img:hover {
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.anime h5 {
+    font-size: 15px;
+    width: 100%;
+    height: 20px;
+    background: red;
+    text-align: center;
+    overflow: hidden;
+}
+
+.section-two {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background: rgb(0, 0, 70);
+    margin-bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+}
+
+footer h4 {
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    top: 40%;
+}

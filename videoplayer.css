@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+}
+
+.clearfloat {
+    clear: both;
+}
+
+.video-player {
+    background: rgb(240, 241, 255);
+    height: 600px;
+    width: 960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px 20px 10px;
+    border: 2px solid green;
+    border-radius: 7px;
+}
+
+video {
+    width: inherit;
+    height: 540px;
+    display: block;
+}
+
+/* .buttons {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    margin-top: 30px;
+} */
+
+.button {
+    margin: auto;
+    position: relative;
+    bottom: 50%;
+    transform: translateY(-20%);
+    outline: none;
+}
+
+button:active {
+    outline: none;
+}
+
+#btnPlayPause{
+    height: 30px;
+    width: 30px;
+    background: url("control/play.png");
+    background-size: 30px 30px;
+    border: none;
+}
+
+#btnStop {
+    height: 30px;
+    width: 30px;
+    background: url("control/stop.png");
+    background-size: 30px 30px;
+    border: none;
+}
+
+#btnReplay {
+    height: 30px;
+    width: 30px;
+    background: url("control/repeat.png");
+    background-size: 30px 30px;
+    border: none;
+}
+
+#btnMute {
+    height: 30px;
+    width: 30px;
+    background: url("control/volume.png");
+    background-size: 30px 30px;
+    border: none;
+}
+
+progress {
+    color: green;
+    font-size: 12px;
+    width: 70%;
+    margin: 15px 0 15px 0;
+    height: 16px;
+    border: none;
+    margin-left: 6px;
+    margin-right: 10px;
+    background: #adadad;
+    border-radius: 20px;
+}
+
+/* progress[value]::-webkit-progress-bar {
+    background-color: #ec0000;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  } */
+  
+  
+.controls {
+    background: red;
+    margin-top: 15px;
+    width: 100%;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.volume {
+    display: inline-block;
+    width: 15%;
+    margin: auto;
+    position: relative;
+    bottom: 50%;
+    transform: translateY(-20%);
+    outline: none;
+}
+
+.volume input {
+    width: 70%;
+    color: blue;
+    position: relative;
+    bottom: 8px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.volume button {
+    margin: auto;
+    position: relative;
+    bottom: -7px;
+    right: -6px;
+    transform: translateY(-20%);
+    outline: none;
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    width: 100%;
+    height: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 5px;
+    background: #ffffff; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.9; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    z-index: -1px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: rgb(0, 255, 98); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    z-index: 99px;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+* {
+    z-index: 0px;
+}
